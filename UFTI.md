@@ -6,7 +6,7 @@ UFTI (Ultimate Frisbee Type Indicator) 是一个飞盘运动的"盘格"评测系
 
 ## 技术要求
 
-- 单页面网站，使用原生 HTML 技术
+- 单页面网站，使用 Vue3 Composition API + TypeScript 实现
 - 保证网站完整可交互
 - 适配桌面端和移动端
 - 设计风格：活泼有趣

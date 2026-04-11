@@ -1,106 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UFTI - 飞盘盘格评测系统</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <!-- 首页 -->
-        <section id="home-page" class="page active">
-            <div class="home-content">
-                <div class="logo">
-                    <span class="logo-icon">🥏</span>
-                    <h1>UFTI</h1>
-                </div>
-                <p class="subtitle">Ultimate Frisbee Type Indicator</p>
-                <p class="description">闲着也是闲着，来测测你的飞盘盘格吧！</p>
-                <p class="note">⚠️ 重要声明：本评测仅供娱乐，非专业评测！
-                信则灵，不信则更灵 😜</p>
-                <div class="features">
-                    <div class="feature">
-                        <span class="feature-icon">🧐</span>
-                        <span>瞎评7大维度</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">🎯</span>
-                        <span>乱点鸳鸯谱</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">🤪</span>
-                        <span>快乐就完事</span>
-                    </div>
-                </div>
-                <button class="btn btn-primary" onclick="app.startQuiz()">开始评测</button>
-            </div>
-        </section>
-
-        <!-- 题目页面 -->
-        <section id="quiz-page" class="page">
-            <div class="quiz-header">
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill"></div>
-                </div>
-                <span class="progress-text" id="progress-text">1 / 15</span>
-            </div>
-            <div class="quiz-content">
-                <div class="dimension-badge" id="dimension-badge">
-                    <span class="dimension-icon" id="dimension-icon">🏃</span>
-                    <span class="dimension-name" id="dimension-name">跑动能力</span>
-                </div>
-                <h2 class="question-text" id="question-text">题目加载中...</h2>
-                <div class="options" id="options-container">
-                    <!-- 选项将通过JS动态生成 -->
-                </div>
-            </div>
-        </section>
-
-        <!-- 加载页面 -->
-        <section id="loading-page" class="page">
-            <div class="loading-content">
-                <div class="flying-disc">
-                    <span class="disc-icon">🥏</span>
-                </div>
-                <p class="loading-text">正在分析你的盘格...</p>
-                <div class="loading-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-
-        <!-- 结果页面 -->
-        <section id="result-page" class="page">
-            <div class="result-content">
-                <div class="result-header">
-                    <span class="result-icon" id="result-icon">⚡</span>
-                    <h2 class="result-name" id="result-name">永动机</h2>
-                    <p class="result-title" id="result-title">飞盘场上不知疲倦的跑动者</p>
-                </div>
-                <div class="result-description" id="result-description">
-                    你是场上的永动机...
-                </div>
-                <div class="dimensions-chart">
-                    <h3>维度得分</h3>
-                    <div class="chart-container" id="chart-container">
-                        <!-- 图表将通过JS动态生成 -->
-                    </div>
-                </div>
-                <div class="result-note">
-                    <p>⚠️ 再次声明：本结果仅供娱乐，切勿当真！</p>
-                    <p>但如果你真的相信，那也挺好的 😊</p>
-                </div>
-                <div class="result-actions">
-                    <button class="btn btn-primary" onclick="app.restart()">再来一次</button>
-                    <button class="btn btn-secondary" onclick="app.share()">分享快乐</button>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="app.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
