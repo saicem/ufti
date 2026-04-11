@@ -1,0 +1,228 @@
+{
+  "dimensions": [
+    {
+      "id": "running",
+      "name": "跑动能力",
+      "description": "对位通常是不想追别人，还是能跑到对位不想追",
+      "icon": "🏃"
+    },
+    {
+      "id": "breaking_mark",
+      "name": "摆脱能力",
+      "description": "防守人站前边就说没有没有，还是有具体思路和方法摆脱",
+      "icon": "💨"
+    },
+    {
+      "id": "catching",
+      "name": "接盘能力",
+      "description": "考虑正面冲刺接盘能力。接非常规盘，包含hammer，刀盘的能力。能否跳接盘。能否单手接盘",
+      "icon": "🤲"
+    },
+    {
+      "id": "throwing_mentality",
+      "name": "持盘心态",
+      "description": "不敢传盘，鲁莽传盘还是能冷静按情况传盘",
+      "icon": "🧠"
+    },
+    {
+      "id": "long_throw",
+      "name": "长传能力",
+      "description": "考虑射程，能否在防守下稳定出盘，出盘稳定性，能否掌控速度和悬浮时间",
+      "icon": "🚀"
+    },
+    {
+      "id": "short_throw",
+      "name": "短传能力",
+      "description": "考虑是否能正反手快速出盘，破break能力，过顶盘，dump，有无跨步习惯",
+      "icon": "🎯"
+    },
+    {
+      "id": "awareness",
+      "name": "意识",
+      "description": "在被poach时知道如何处理，知道什么时候该下底，什么时候该上切，什么时候该救盘",
+      "icon": "👁️"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "dimension": "running",
+      "text": "你防守对方通常的情况是？",
+      "weight": 10,
+      "options": [
+        { "text": "放你3m，只有强者才配让我认真", "score": 0 },
+        { "text": "能提供威胁，但对方仍然可以轻松摆脱", "score": 3 },
+        { "text": "通常能够紧紧粘住对方，对方需要一些技巧才能摆脱", "score": 7 },
+        { "text": "对方看到我就头疼，全场追着他跑", "score": 10 }
+      ]
+    },
+    {
+      "id": "q2",
+      "dimension": "running",
+      "text": "比赛后你的双腿状态是？",
+      "weight": 8,
+      "options": [
+        { "text": "毫无感觉，甚至还能跑个马拉松", "score": 0 },
+        { "text": "有点酸，但睡一觉就好了", "score": 4 },
+        { "text": "感觉腿已经不是自己的了", "score": 7 },
+        { "text": "需要轮椅代步一周", "score": 10 }
+      ]
+    },
+    {
+      "id": "q3",
+      "dimension": "breaking_mark",
+      "text": "当防守人贴得很紧时，你会？",
+      "weight": 10,
+      "options": [
+        { "text": "立刻举手喊没有没有！", "score": 0 },
+        { "text": "尝试传一下，不行就dump", "score": 4 },
+        { "text": "用假动作骗过防守人", "score": 7 },
+        { "text": "一套连招让防守人怀疑人生", "score": 10 }
+      ]
+    },
+    {
+      "id": "q4",
+      "dimension": "breaking_mark",
+      "text": "面对强力防守，你的内心OS是？",
+      "weight": 8,
+      "options": [
+        { "text": "完了完了完了", "score": 0 },
+        { "text": "有点紧张，但能处理", "score": 4 },
+        { "text": "来吧，看谁更狠", "score": 7 },
+        { "text": "就这？让我教教你什么叫防守", "score": 10 }
+      ]
+    },
+    {
+      "id": "q5",
+      "dimension": "catching",
+      "text": "面对一个高难度hammer盘，你会？",
+      "weight": 10,
+      "options": [
+        { "text": "躲开，怕砸到脸", "score": 0 },
+        { "text": "尝试接，但心里没底", "score": 4 },
+        { "text": "稳稳接住，基本操作", "score": 7 },
+        { "text": "单手空中拦截，顺便做个pose", "score": 10 }
+      ]
+    },
+    {
+      "id": "q6",
+      "dimension": "catching",
+      "text": "你的接盘风格是？",
+      "weight": 8,
+      "options": [
+        { "text": "能接住就行，姿势不重要", "score": 2 },
+        { "text": "双手稳稳接住", "score": 5 },
+        { "text": "经常需要飞身扑救", "score": 8 },
+        { "text": "空中作业是我的专长", "score": 10 }
+      ]
+    },
+    {
+      "id": "q7",
+      "dimension": "throwing_mentality",
+      "text": "当你持盘时，你的心态是？",
+      "weight": 10,
+      "options": [
+        { "text": "千万别给我，我不敢传", "score": 0 },
+        { "text": "赶紧传出去，压力好大", "score": 3 },
+        { "text": "观察一下，找最佳时机", "score": 7 },
+        { "text": "全场都在我的掌控中", "score": 10 }
+      ]
+    },
+    {
+      "id": "q8",
+      "dimension": "throwing_mentality",
+      "text": "面对关键时刻的传盘，你会？",
+      "weight": 9,
+      "options": [
+        { "text": "手抖，直接传丢", "score": 0 },
+        { "text": "选择最安全的dump", "score": 4 },
+        { "text": "冷静分析后传盘", "score": 7 },
+        { "text": "越是关键时刻越兴奋", "score": 10 }
+      ]
+    },
+    {
+      "id": "q9",
+      "dimension": "long_throw",
+      "text": "你的长传射程是？",
+      "weight": 10,
+      "options": [
+        { "text": "过半场就吃力", "score": 0 },
+        { "text": "能扔到得分区边缘", "score": 4 },
+        { "text": "全场任意位置都能扔", "score": 7 },
+        { "text": "从底线扔到对面底线，还能悬浮", "score": 10 }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "long_throw",
+      "text": "防守压力下你的长传稳定性如何？",
+      "weight": 9,
+      "options": [
+        { "text": "有人防守就不敢长传", "score": 0 },
+        { "text": "偶尔能成功，但经常失误", "score": 3 },
+        { "text": "大部分情况下能稳定出盘", "score": 7 },
+        { "text": "防守越紧我传得越准", "score": 10 }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "short_throw",
+      "text": "你的正反手切换速度是？",
+      "weight": 9,
+      "options": [
+        { "text": "只会单手，另一手是摆设", "score": 0 },
+        { "text": "能换，但很慢", "score": 3 },
+        { "text": "切换自如，基本操作", "score": 7 },
+        { "text": "无缝切换，防守人看不出来", "score": 10 }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "short_throw",
+      "text": "破break时，你的选择是？",
+      "weight": 10,
+      "options": [
+        { "text": "不敢破，只能dump", "score": 0 },
+        { "text": "偶尔尝试，成功率一般", "score": 4 },
+        { "text": "有信心破break", "score": 7 },
+        { "text": "break side是我的后花园", "score": 10 }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "awareness",
+      "text": "当你被poach时，你会？",
+      "weight": 10,
+      "options": [
+        { "text": "什么是poach？", "score": 0 },
+        { "text": "感觉很别扭，但不知道怎么处理", "score": 3 },
+        { "text": "能识别并尝试应对", "score": 7 },
+        { "text": "早就看穿，已经想好三个对策", "score": 10 }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "awareness",
+      "text": "场上没有持盘时，你在想什么？",
+      "weight": 9,
+      "options": [
+        { "text": "好累，什么时候结束", "score": 0 },
+        { "text": "跟着队友跑", "score": 3 },
+        { "text": "观察场上空间，寻找机会", "score": 7 },
+        { "text": "预判接下来的三个传盘路线", "score": 10 }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "awareness",
+      "text": "队友出盘后，你会？",
+      "weight": 8,
+      "options": [
+        { "text": "立刻贴上去救盘", "score": 0 },
+        { "text": "看情况，有时候太急了", "score": 4 },
+        { "text": "给cutter处理时间，需要时再救", "score": 7 },
+        { "text": "一切都在计算中，从不做无用功", "score": 10 }
+      ]
+    }
+  ]
+}

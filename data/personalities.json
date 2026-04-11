@@ -1,0 +1,168 @@
+{
+  "personalities": [
+    {
+      "id": "perpetual_motion",
+      "name": "永动机",
+      "title": "飞盘场上不知疲倦的跑动者",
+      "description": "你是场上的永动机，仿佛有用不完的体力。对手看到你都会绝望，因为你永远不会停止跑动。你的存在就是对防守者最大的惩罚。",
+      "icon": "⚡",
+      "color": "#FF6B35",
+      "conditions": {
+        "running": { "min": 75 }
+      }
+    },
+    {
+      "id": "escape_artist",
+      "name": "逃脱大师",
+      "title": "防守人的噩梦",
+      "description": "你拥有神奇的摆脱能力，无论防守人多紧，你总能找到出路。你的假动作让无数防守人失去重心，你的突破让对手怀疑人生。",
+      "icon": "🎭",
+      "color": "#9B59B6",
+      "conditions": {
+        "breaking_mark": { "min": 75 }
+      }
+    },
+    {
+      "id": "sky_walker",
+      "name": "空中飞人",
+      "title": "天空才是我的极限",
+      "description": "你对高空盘有着特殊的亲和力。无论是hammer还是刀盘，在你眼中都是送分题。你的空中作业能力让队友放心，让对手绝望。",
+      "icon": "🦅",
+      "color": "#3498DB",
+      "conditions": {
+        "catching": { "min": 75 }
+      }
+    },
+    {
+      "id": "ice_veins",
+      "name": "冷血杀手",
+      "title": "关键时刻从不手软",
+      "description": "你拥有钢铁般的神经，越是关键时刻越冷静。当其他人手抖时，你是那个能稳稳传出致命一传的人。压力对你来说只是兴奋剂。",
+      "icon": "❄️",
+      "color": "#00CED1",
+      "conditions": {
+        "throwing_mentality": { "min": 75 }
+      }
+    },
+    {
+      "id": "cannon",
+      "name": "人间大炮",
+      "title": "一传定江山",
+      "description": "你的手臂就是武器，长传是你最致命的杀招。全场都在你的射程之内，一个精准的长传就能改变比赛走势。你是那个能创造奇迹的人。",
+      "icon": "💣",
+      "color": "#E74C3C",
+      "conditions": {
+        "long_throw": { "min": 75 }
+      }
+    },
+    {
+      "id": "surgeon",
+      "name": "外科医生",
+      "title": "精准到毫米的传盘",
+      "description": "你的短传就像手术刀一样精准。破break对你来说是家常便饭，你能在最狭小的空间找到传盘路线。你的每一次出盘都是艺术品。",
+      "icon": "🔬",
+      "color": "#2ECC71",
+      "conditions": {
+        "short_throw": { "min": 75 }
+      }
+    },
+    {
+      "id": "chess_master",
+      "name": "棋圣",
+      "title": "场上的一切都在计算中",
+      "description": "你拥有超越常人的场上意识。你能预判接下来的几步，总能出现在最该出现的位置。你是场上的大脑，指挥着比赛的节奏。",
+      "icon": "♟️",
+      "color": "#F39C12",
+      "conditions": {
+        "awareness": { "min": 75 }
+      }
+    },
+    {
+      "id": "all_rounder",
+      "name": "六边形战士",
+      "title": "没有短板的全能选手",
+      "description": "你是那个让队友放心、让对手头疼的全能选手。虽然没有特别突出的单项，但你也几乎没有短板。在任何位置上你都能发挥作用。",
+      "icon": "🔷",
+      "color": "#1ABC9C",
+      "conditions": {
+        "running": { "min": 50 },
+        "breaking_mark": { "min": 50 },
+        "catching": { "min": 50 },
+        "throwing_mentality": { "min": 50 },
+        "long_throw": { "min": 50 },
+        "short_throw": { "min": 50 },
+        "awareness": { "min": 50 }
+      }
+    },
+    {
+      "id": "newbie",
+      "name": "萌新",
+      "title": "潜力无限的未来之星",
+      "description": "每个大神都曾经是萌新。虽然现在你可能还在学习基础，但你的热情和潜力是无限的。保持热爱，继续练习，未来的飞盘场上必有你的一席之地！",
+      "icon": "🌱",
+      "color": "#95A5A6",
+      "conditions": {}
+    },
+    {
+      "id": "sprinter_handler",
+      "name": "冲刺型控盘手",
+      "title": "能跑能传的威胁",
+      "description": "你是那种让防守人崩溃的存在——既能疯狂跑动，又能稳定传盘。你的跑动为队友创造空间，你的传盘让进攻流畅运转。",
+      "icon": "🏃‍♂️",
+      "color": "#E67E22",
+      "conditions": {
+        "running": { "min": 65 },
+        "short_throw": { "min": 65 }
+      }
+    },
+    {
+      "id": "deep_threat",
+      "name": "深水炸弹",
+      "title": "底线附近的致命武器",
+      "description": "你是那个永远让防守人不敢放空的deep threat。你的长传能力让队友敢于下底，你的接盘能力让长传变成得分。你是改变比赛的那个人。",
+      "icon": "💥",
+      "color": "#C0392B",
+      "conditions": {
+        "long_throw": { "min": 65 },
+        "catching": { "min": 65 }
+      }
+    },
+    {
+      "id": "field_general",
+      "name": "场上将军",
+      "title": "掌控全局的领袖",
+      "description": "你不仅拥有出色的意识，还有冷静的心态。你是场上的指挥官，队友都信任你的判断。在你的带领下，球队的进攻井井有条。",
+      "icon": "👑",
+      "color": "#8E44AD",
+      "conditions": {
+        "awareness": { "min": 65 },
+        "throwing_mentality": { "min": 65 }
+      }
+    },
+    {
+      "id": "houdini",
+      "name": "魔术师",
+      "title": "不可思议的盘技",
+      "description": "你的摆脱能力和传盘技术让人惊叹。你总能在看似不可能的情况下出盘，你的每一次触盘都可能创造奇迹。看你在场上表演是一种享受。",
+      "icon": "🎩",
+      "color": "#D35400",
+      "conditions": {
+        "breaking_mark": { "min": 65 },
+        "short_throw": { "min": 65 }
+      }
+    },
+    {
+      "id": "workhorse",
+      "name": "老黄牛",
+      "title": "默默付出的可靠队友",
+      "description": "你可能不是最耀眼的明星，但你是球队不可或缺的一部分。你稳定、可靠，总是默默做好自己的工作。球队需要你这样的球员。",
+      "icon": "🐂",
+      "color": "#7F8C8D",
+      "conditions": {
+        "running": { "min": 40, "max": 60 },
+        "catching": { "min": 40, "max": 60 },
+        "awareness": { "min": 40, "max": 60 }
+      }
+    }
+  ]
+}
