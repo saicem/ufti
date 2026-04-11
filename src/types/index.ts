@@ -74,4 +74,4 @@ export interface PersonalitiesData {
 export type PageType = 'home' | 'quiz' | 'loading' | 'result';
 
 
-export type DimensionType = 'running' | 'breaking_mark' | 'catching' | 'throwing_mentality' | 'long_throw' | 'short_throw' | 'awareness'
+export type DimensionType = 'running' | 'defense' | 'breaking_mark' | 'catching' | 'throwing_mentality' | 'long_throw' | 'short_throw' | 'awareness' 

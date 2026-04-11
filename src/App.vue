@@ -14,7 +14,7 @@
         <div class="features">
           <div class="feature">
             <span class="feature-icon">🧐</span>
-            <span>瞎评7大维度</span>
+            <span>瞎评8大维度</span>
           </div>
           <div class="feature">
             <span class="feature-icon">🎯</span>
@@ -106,13 +106,7 @@
       </div>
     </section>
 
-    <!-- 分享选项面板 -->
-    <div v-if="showSharePanel" class="share-panel">
-      <button v-for="option in shareOptions" :key="option.text" class="share-option"
-        :class="{ close: option.text === '取消' }" @click="handleShareOption(option)">
-        {{ option.text }}
-      </button>
-    </div>
+
   </div>
 </template>
 
@@ -129,8 +123,6 @@ const currentQuestionIndex = ref(0);
 const answers = ref<Record<string, { dimension: string; score: number; weight: number }>>({});
 const matchedPersonality = ref<Personality | null>(null);
 const dimensionPercentages = ref<DimensionPercentages>({});
-const showSharePanel = ref(false);
-const shareOptions = ref<any[]>([]);
 const chartBars = ref<HTMLElement[]>([]);
 
 // 图表颜色
@@ -222,26 +214,10 @@ const share = () => {
 
   const name = matchedPersonality.value.name;
   const title = matchedPersonality.value.title;
-  const text = `我在UFTI飞盘盘格评测中获得了【${name}】！${title}，快来测测你的盘格吧！`;
+  const text = `我在UFTI飞盘盘格评测中获得了【${name}】！${title}，快来测测你的盘格吧！\n${window.location.href}`;
 
-  shareOptions.value = [
-    { text: '复制文字', action: () => copyText(text) }
-  ];
-
-  if (navigator.share) {
-    shareOptions.value.push({
-      text: '系统分享',
-      action: () => {
-        navigator.share({
-          title: 'UFTI 飞盘盘格评测',
-          text: text,
-          url: window.location.href
-        });
-      }
-    });
-  }
-
-  showSharePanel.value = true;
+  // 直接复制文字到剪贴板，不显示分享面板
+  copyText(text);
 };
 
 const copyText = (text: string) => {
@@ -250,14 +226,6 @@ const copyText = (text: string) => {
   }).catch(() => {
     alert('复制失败，请手动复制');
   });
-  showSharePanel.value = false;
-};
-
-const handleShareOption = (option: any) => {
-  if (option.action) {
-    option.action();
-  }
-  showSharePanel.value = false;
 };
 
 // 生命周期
@@ -757,57 +725,6 @@ body {
   display: flex;
   gap: 15px;
   justify-content: center;
-}
-
-/* 分享选项面板 */
-.share-panel {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  border-radius: var(--radius);
-  padding: 30px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  min-width: 300px;
-  text-align: center;
-}
-
-.share-option {
-  display: block;
-  width: 100%;
-  padding: 15px 20px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: inherit;
-}
-
-.share-option:not(.close) {
-  background: linear-gradient(135deg, var(--primary-color), #f7931e);
-  color: white;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
-}
-
-.share-option:not(.close):hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
-}
-
-.share-option.close {
-  background: #f8f9fa;
-  color: var(--dark-color);
-  border: 2px solid #e9ecef;
-}
-
-.share-option.close:hover {
-  background: #e9ecef;
-  transform: translateY(-2px);
 }
 
 /* 响应式设计 */

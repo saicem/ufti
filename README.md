@@ -2,6 +2,10 @@
 
 仅供娱乐
 
-Code is cheap
+## 数据
 
-Show me the prompt
+盘格 [src/data/personality.json](./src/data/personality.json)
+
+题目 [src/data/questions.json](./src/data/questions.json)
+
+若有建议，欢迎提交Pull Request

@@ -1,6 +1,186 @@
 {
   "personalities": [
     {
+      "id": "all_rounder",
+      "name": "六边形战士",
+      "title": "没有短板的全能选手",
+      "description": "你是那个让队友放心、让对手头疼的全能选手。虽然没有特别突出的单项，但你也几乎没有短板。在任何位置上你都能发挥作用。",
+      "icon": "🔷",
+      "color": "#1ABC9C",
+      "conditions": {
+        "running": {
+          "min": 75
+        },
+        "breaking_mark": {
+          "min": 75
+        },
+        "defense": {
+          "min": 75
+        },
+        "catching": {
+          "min": 75
+        },
+        "throwing_mentality": {
+          "min": 75
+        },
+        "long_throw": {
+          "min": 75
+        },
+        "short_throw": {
+          "min": 75
+        },
+        "awareness": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "stationary_handler",
+      "name": "站桩控盘手",
+      "title": "不动如山的传盘大师",
+      "description": "你或许不是跑得最快的，但你的传盘技术让队友完全信任你。你擅长在固定位置组织进攻，用精准的传盘撕开对手防线。你的存在证明了：有时候，站着也能改变比赛。",
+      "icon": "🎯",
+      "color": "#16A085",
+      "conditions": {
+        "short_throw": {
+          "min": 75
+        },
+        "long_throw": {
+          "min": 75
+        },
+        "running": {
+          "max": 60
+        }
+      }
+    },
+        {
+      "id": "houdini",
+      "name": "魔术师",
+      "title": "不可思议的盘技",
+      "description": "你的摆脱能力和传盘技术让人惊叹。你总能在看似不可能的情况下出盘，你的每一次触盘都可能创造奇迹。看你在场上表演是一种享受。",
+      "icon": "🎩",
+      "color": "#D35400",
+      "conditions": {
+        "breaking_mark": {
+          "min": 75
+        },
+        "short_throw": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "defense_wall",
+      "name": "防守铁闸",
+      "title": "对手进攻的噩梦",
+      "description": "你是队伍的防守核心，拥有出色的位置感和接盘能力。无论对手如何进攻，你总能出现在最关键的位置，破坏对手的进攻节奏。你的存在让队友感到安心。",
+      "icon": "🛡️",
+      "color": "#34495E",
+      "conditions": {
+        "defense": {
+          "min": 75
+        },
+        "awareness": {
+          "min": 75
+        },
+        "running": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "cutter",
+      "name": "切割者",
+      "title": "撕裂防线的跑锋",
+      "description": "你的传盘或许不够精准，但你的跑动和接盘能力让防守人望尘莫及。你是那个能撕开对手防线、创造进攻空间的人。只要盘到了你手里，你就是最可靠的终结点。",
+      "icon": "⚔️",
+      "color": "#E91E63",
+      "conditions": {
+        "running": {
+          "min": 75
+        },
+        "catching": {
+          "min": 75
+        },
+        "short_throw": {
+          "max": 70
+        },
+        "long_throw": {
+          "max": 70
+        }
+      }
+    },
+    {
+      "id": "sprinter_handler",
+      "name": "冲刺型控盘手",
+      "title": "能跑能传的威胁",
+      "description": "你是那种让防守人崩溃的存在——既能疯狂跑动，又能稳定传盘。你的跑动为队友创造空间，你的传盘让进攻流畅运转。",
+      "icon": "🏃‍♂️",
+      "color": "#E67E22",
+      "conditions": {
+        "running": {
+          "min": 75
+        },
+        "short_throw": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "deep_threat",
+      "name": "深水炸弹",
+      "title": "底线附近的致命武器",
+      "description": "你是那个永远让防守人不敢放空的deep threat。你的速度和接盘能力让你成为底线的致命武器。你是改变比赛的那个人。",
+      "icon": "💥",
+      "color": "#C0392B",
+      "conditions": {
+        "running": {
+          "min": 75
+        },
+        "catching": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "field_general",
+      "name": "场上将军",
+      "title": "掌控全局的领袖",
+      "description": "你不仅拥有出色的意识，还有冷静的心态。你是场上的指挥官，队友都信任你的判断。在你的带领下，队伍的进攻井井有条。",
+      "icon": "👑",
+      "color": "#8E44AD",
+      "conditions": {
+        "awareness": {
+          "min": 75
+        },
+        "throwing_mentality": {
+          "min": 75
+        }
+      }
+    },
+    {
+      "id": "workhorse",
+      "name": "老黄牛",
+      "title": "默默付出的可靠队友",
+      "description": "你可能不是最耀眼的明星，但你是队伍不可或缺的一部分。你稳定、可靠，总是默默做好自己的工作。队伍需要你这样的队员。",
+      "icon": "🐂",
+      "color": "#7F8C8D",
+      "conditions": {
+        "running": {
+          "min": 40,
+          "max": 75
+        },
+        "catching": {
+          "min": 40,
+          "max": 75
+        },
+        "awareness": {
+          "min": 40,
+          "max": 75
+        }
+      }
+    },
+    {
       "id": "perpetual_motion",
       "name": "永动机",
       "title": "飞盘场上不知疲倦的跑动者",
@@ -8,7 +188,9 @@
       "icon": "⚡",
       "color": "#FF6B35",
       "conditions": {
-        "running": { "min": 75 }
+        "running": {
+          "min": 75
+        }
       }
     },
     {
@@ -19,7 +201,9 @@
       "icon": "🎭",
       "color": "#9B59B6",
       "conditions": {
-        "breaking_mark": { "min": 75 }
+        "breaking_mark": {
+          "min": 75
+        }
       }
     },
     {
@@ -30,7 +214,9 @@
       "icon": "🦅",
       "color": "#3498DB",
       "conditions": {
-        "catching": { "min": 75 }
+        "catching": {
+          "min": 75
+        }
       }
     },
     {
@@ -41,7 +227,9 @@
       "icon": "❄️",
       "color": "#00CED1",
       "conditions": {
-        "throwing_mentality": { "min": 75 }
+        "throwing_mentality": {
+          "min": 75
+        }
       }
     },
     {
@@ -52,7 +240,9 @@
       "icon": "💣",
       "color": "#E74C3C",
       "conditions": {
-        "long_throw": { "min": 75 }
+        "long_throw": {
+          "min": 75
+        }
       }
     },
     {
@@ -63,7 +253,9 @@
       "icon": "🔬",
       "color": "#2ECC71",
       "conditions": {
-        "short_throw": { "min": 75 }
+        "short_throw": {
+          "min": 75
+        }
       }
     },
     {
@@ -74,24 +266,9 @@
       "icon": "♟️",
       "color": "#F39C12",
       "conditions": {
-        "awareness": { "min": 75 }
-      }
-    },
-    {
-      "id": "all_rounder",
-      "name": "六边形战士",
-      "title": "没有短板的全能选手",
-      "description": "你是那个让队友放心、让对手头疼的全能选手。虽然没有特别突出的单项，但你也几乎没有短板。在任何位置上你都能发挥作用。",
-      "icon": "🔷",
-      "color": "#1ABC9C",
-      "conditions": {
-        "running": { "min": 80 },
-        "breaking_mark": { "min": 80 },
-        "catching": { "min": 80 },
-        "throwing_mentality": { "min": 80 },
-        "long_throw": { "min": 80 },
-        "short_throw": { "min": 80 },
-        "awareness": { "min": 80 }
+        "awareness": {
+          "min": 75
+        }
       }
     },
     {
@@ -102,67 +279,6 @@
       "icon": "🌱",
       "color": "#95A5A6",
       "conditions": {}
-    },
-    {
-      "id": "sprinter_handler",
-      "name": "冲刺型控盘手",
-      "title": "能跑能传的威胁",
-      "description": "你是那种让防守人崩溃的存在——既能疯狂跑动，又能稳定传盘。你的跑动为队友创造空间，你的传盘让进攻流畅运转。",
-      "icon": "🏃‍♂️",
-      "color": "#E67E22",
-      "conditions": {
-        "running": { "min": 65 },
-        "short_throw": { "min": 65 }
-      }
-    },
-    {
-      "id": "deep_threat",
-      "name": "深水炸弹",
-      "title": "底线附近的致命武器",
-      "description": "你是那个永远让防守人不敢放空的deep threat。你的长传能力让队友敢于下底，你的接盘能力让长传变成得分。你是改变比赛的那个人。",
-      "icon": "💥",
-      "color": "#C0392B",
-      "conditions": {
-        "long_throw": { "min": 65 },
-        "catching": { "min": 65 }
-      }
-    },
-    {
-      "id": "field_general",
-      "name": "场上将军",
-      "title": "掌控全局的领袖",
-      "description": "你不仅拥有出色的意识，还有冷静的心态。你是场上的指挥官，队友都信任你的判断。在你的带领下，球队的进攻井井有条。",
-      "icon": "👑",
-      "color": "#8E44AD",
-      "conditions": {
-        "awareness": { "min": 65 },
-        "throwing_mentality": { "min": 65 }
-      }
-    },
-    {
-      "id": "houdini",
-      "name": "魔术师",
-      "title": "不可思议的盘技",
-      "description": "你的摆脱能力和传盘技术让人惊叹。你总能在看似不可能的情况下出盘，你的每一次触盘都可能创造奇迹。看你在场上表演是一种享受。",
-      "icon": "🎩",
-      "color": "#D35400",
-      "conditions": {
-        "breaking_mark": { "min": 65 },
-        "short_throw": { "min": 65 }
-      }
-    },
-    {
-      "id": "workhorse",
-      "name": "老黄牛",
-      "title": "默默付出的可靠队友",
-      "description": "你可能不是最耀眼的明星，但你是球队不可或缺的一部分。你稳定、可靠，总是默默做好自己的工作。球队需要你这样的球员。",
-      "icon": "🐂",
-      "color": "#7F8C8D",
-      "conditions": {
-        "running": { "min": 40, "max": 60 },
-        "catching": { "min": 40, "max": 60 },
-        "awareness": { "min": 40, "max": 60 }
-      }
     }
   ]
 }
