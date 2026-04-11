@@ -85,13 +85,13 @@
       "icon": "🔷",
       "color": "#1ABC9C",
       "conditions": {
-        "running": { "min": 50 },
-        "breaking_mark": { "min": 50 },
-        "catching": { "min": 50 },
-        "throwing_mentality": { "min": 50 },
-        "long_throw": { "min": 50 },
-        "short_throw": { "min": 50 },
-        "awareness": { "min": 50 }
+        "running": { "min": 80 },
+        "breaking_mark": { "min": 80 },
+        "catching": { "min": 80 },
+        "throwing_mentality": { "min": 80 },
+        "long_throw": { "min": 80 },
+        "short_throw": { "min": 80 },
+        "awareness": { "min": 80 }
       }
     },
     {

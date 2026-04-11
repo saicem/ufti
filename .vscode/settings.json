@@ -1,3 +1,7 @@
 {
-    "basedpyright.disableLanguageServices": true
+    "basedpyright.disableLanguageServices": true,
+    "cSpell.words": [
+        "MBTI",
+        "UFTI"
+    ]
 }

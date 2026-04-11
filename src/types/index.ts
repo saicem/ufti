@@ -56,7 +56,7 @@ export interface Personality {
   description: string;
   icon: string;
   color: string;
-  conditions: Record<string, PersonalityCondition | undefined>;
+  conditions: Partial<Record<DimensionType, PersonalityCondition>>;
 }
 
 // 问题数据类型
@@ -72,3 +72,6 @@ export interface PersonalitiesData {
 
 // 页面类型
 export type PageType = 'home' | 'quiz' | 'loading' | 'result';
+
+
+export type DimensionType = 'running' | 'breaking_mark' | 'catching' | 'throwing_mentality' | 'long_throw' | 'short_throw' | 'awareness'
