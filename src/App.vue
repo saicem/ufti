@@ -504,15 +504,11 @@ body {
   color: var(--dark-color);
 }
 
-.option:hover {
+.option:active {
   background: white;
   border-color: var(--primary-color);
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.option:active {
   transform: translateX(5px) scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* 加载页面样式 */
